@@ -1,0 +1,241 @@
+Number of records: 2473643
+#####################################################################
+Number of columns: 15
+#####################################################################
+Columns names: ['VehicleSearchedIndicator' 'ContrabandIndicator' 'Department Name'
+ 'InterventionDateTime' 'InterventionLocationName'
+ 'InterventionReasonCode' 'ReportingOfficerIdentificationID'
+ 'ResidentIndicator' 'SearchAuthorizationCode' 'StatuteReason'
+ 'SubjectAge' 'SubjectEthnicityCode' 'SubjectRaceCode' 'SubjectSexCode'
+ 'TownResidentIndicator']
+#####################################################################
+Column types: VehicleSearchedIndicator               bool
+ContrabandIndicator                    bool
+Department Name                      object
+InterventionDateTime                 object
+InterventionLocationName             object
+InterventionReasonCode               object
+ReportingOfficerIdentificationID     object
+ResidentIndicator                      bool
+SearchAuthorizationCode              object
+StatuteReason                        object
+SubjectAge                          float64
+SubjectEthnicityCode                 object
+SubjectRaceCode                      object
+SubjectSexCode                       object
+TownResidentIndicator                  bool
+dtype: object
+#####################################################################
+Number of nulls that each column has:
+	VehicleSearchedIndicator: 0
+	ContrabandIndicator: 0
+	Department Name: 0
+	InterventionDateTime: 0
+	InterventionLocationName: 36
+	InterventionReasonCode: 2
+	ReportingOfficerIdentificationID: 2
+	ResidentIndicator: 0
+	SearchAuthorizationCode: 10
+	StatuteReason: 507
+	SubjectAge: 0
+	SubjectEthnicityCode: 0
+	SubjectRaceCode: 0
+	SubjectSexCode: 0
+	TownResidentIndicator: 0
+#####################################################################
+Number of duplicated records: 204756
+#####################################################################
+Number of unique records: 2268887
+#####################################################################
+
+			Variables Analysis
+#####################################################################
+False    2199008
+True       69879
+Name: VehicleSearchedIndicator, dtype: int64
+#####################################################################
+False    2243241
+True       25646
+Name: ContrabandIndicator, dtype: int64
+#####################################################################
+Department name: 
+	 Unique values['Ansonia' 'Avon' 'Berlin' 'Bethel' 'Bloomfield' 'Branford' 'Bridgeport'
+ 'Bristol' 'Brookfield' 'CAPITOL POLICE' 'CCSU' 'CSP Headquarters'
+ 'CSP Troop A' 'CSP Troop B' 'CSP Troop C' 'CSP Troop D' 'CSP Troop E'
+ 'CSP Troop F' 'CSP Troop G' 'CSP Troop H' 'CSP Troop I' 'CSP Troop K'
+ 'CSP Troop L' 'Canton' 'Cheshire' 'Clinton' 'Coventry' 'Cromwell' 'DMV'
+ 'Danbury' 'Darien' 'Derby' 'ECSU' 'East Hampton' 'East Hartford'
+ 'East Haven' 'East Lyme' 'East Windsor' 'Easton' 'Enfield' 'Fairfield'
+ 'Farmington' 'Glastonbury' 'Granby' 'Greenwich' 'Groton City'
+ 'Groton Long Point' 'Groton Town' 'Guilford' 'Hamden' 'Hartford'
+ 'Ledyard' 'MET DIST WATER AUTHORITY' 'MTA' 'MTA Stamford' 'Madison'
+ 'Manchester' 'Mashantucket Pequot' 'Mashantucket Pequot Police' 'Meriden'
+ 'Middlebury' 'Middletown' 'Milford' 'Mohegan Tribal'
+ 'Mohegan Tribal Police' 'Monroe' 'Naugatuck' 'New Britain' 'New Canaan'
+ 'New Haven' 'New London' 'New Milford' 'Newington' 'Newtown'
+ 'North Branford' 'North Haven' 'Norwalk' 'Norwich' 'Old Saybrook'
+ 'Orange' 'Plainfield' 'Plainville' 'Plymouth' 'Portland' 'Putnam'
+ 'Redding' 'Ridgefield' 'Rocky Hill' 'SCSU' 'Seymour' 'Shelton' 'Simsbury'
+ 'South Windsor' 'Southington' 'Stamford' 'State Police' 'Stonington'
+ 'Stratford' 'Suffield' 'Thomaston' 'Torrington' 'Trumbull' 'UCONN'
+ 'Vernon' 'WCSU' 'Wallingford' 'Waterbury' 'Waterford' 'Watertown'
+ 'West Hartford' 'West Haven' 'Weston' 'Westport' 'Wethersfield'
+ 'Willimantic' 'Wilton' 'Windsor' 'Windsor Locks' 'Winsted' 'Wolcott'
+ 'Woodbridge' 'Yale'], Number of unique values: 122
+#####################################################################
+ Top 5 values for time:
+03/07/2014 12:00:00 AM    269
+03/08/2014 12:00:00 AM    266
+03/17/2014 12:00:00 AM    260
+03/21/2014 12:00:00 AM    252
+03/22/2014 12:00:00 AM    250
+Name: InterventionDateTime, dtype: int64
+#####################################################################
+Number unique values for InterventionLocationName before lower case and spaces removing: 2504
+#####################################################################
+Number unique values for InterventionLocationName after lower case and spaces removing: 1556
+#####################################################################
+ Unique InterventionLocationName in lower case and without spaces with more than 100 occurencies
+['newhaven' 'stamford' 'hartford' 'wallingford' 'danbury' 'manchester'
+ 'windsor' 'newbritain' 'easthartford' 'fairfield' 'westhartford'
+ 'enfield' 'torrington' 'westport' 'norwich' 'norwalk' 'ridgefield'
+ 'newtown' 'westhaven' 'groton' 'bridgeport' 'waterbury' 'vernon'
+ 'branford' 'milford' 'berlin' 'southington' 'oldsaybrook' 'greenwich'
+ 'newington' 'naugatuck' 'waterford' 'hamden' 'cheshire' 'newcanaan'
+ 'northhaven' 'glastonbury' 'farmington' 'killingly' 'wilton' 'rockyhill'
+ 'wethersfield' 'trumbull' 'middletown' 'bristol' 'mansfield' 'ansonia'
+ 'tolland' 'monroe' 'newlondon' 'seymour' 'darien' 'orange' 'meriden'
+ 'plainville' 'madison' 'stratford' 'westbrook' 'bloomfield' 'willington'
+ 'colchester' 'marlborough' 'brookfield' 'guilford' 'southwindsor'
+ 'bethel' 'montville' 'windsorlocks' 'simsbury' 'plainfield' 'newmilford'
+ 'clinton' 'derby' 'easthaven' 'cromwell' 'watertown' 'windham'
+ 'southbury' 'stafford' 'willimantic' 'storrs' 'putnam' 'griswold'
+ 'woodbridge' 'ellington' 'litchfield' 'middlefield' 'redding' 'union'
+ 'ledyard' 'haddam' 'somers' 'woodbury' 'coventry' 'grotoncity'
+ 'thomaston' 'stonington' 'harwinton' 'northstonington' 'terryville'
+ 'shelton' 'eastwindsor' 'brooklyn' 'chester' 'easthaddam' 'essex'
+ 'pawcatuck' 'oldlyme' 'lebanon' 'thompson' 'deepriver' 'preston' 'canton'
+ 'columbia' 'middlebury' 'eastlyme' 'lisbon' 'beaconfalls' 'winchester'
+ 'bolton' 'avon' 'northbranford' 'eastgranby' 'suffield' 'newhartford'
+ 'granby' 'easton' 'washington' 'unionville' 'burlington' 'hebron'
+ 'oxford' 'coscob' 'ashford' 'goshen' 'durham' 'salem' 'sandyhook'
+ 'plantsville' 'mystic' 'newfairfield' 'riverside' 'bethany' 'easthampton'
+ 'andover' 'moosup' 'barkhamsted' 'prospect' 'pomfret' 'oldmystic'
+ 'oakville' 'weston' 'salisbury' 'northcanaan' 'wolcott' 'bozrah'
+ 'bridgewater' 'byram' 'chaplin' 'sherman' 'hampton' 'plymouth' 'sprague'
+ 'franklin' 'portland' 'colebrook' 'centralvillage' 'woodstock' 'roxbury'
+ 'eastford' 'canterbury' 'winsted' 'morris' 'bethlehem' 'sharon' 'kent'
+ 'killingworth' 'glenville' 'oldgreenwich' 'norfolk' "oldg'wch"
+ 'chickahominy' 'sterling' 'cornwall' 'southport' 'canaan' 'westsimsbury'
+ 'warren' 'voluntown' 'scotland' 'yourcity' 'grotonlongpoint'
+ 'tariffville' 'm' '106' 'wauregan' 'mashantucket' 'northford' 'lostacres'
+ 'quakerhill' 'pemberwick' 'hartland' 'eastmainstreet' 'lyme'
+ 'cityofgroton' 'eastmainst' 'f' 'galesferry' 'weatogue' 'mainst'
+ 'milldale' 'eastmainstreetat' 'highlandave' 'torrington/wincheste'
+ 'migeonave' 'highstreet' 'mainstreet' 'kennedydr' 'litchfieldstreet'
+ 'southmainstreet' 'business' 'highst' 'southmainst' 'southwindham'
+ '1-name?' 'winthropst' 'milbrook' 'torringfordwest' 'eastelmstreet'
+ 'winstedrd' 'harwintonave' 'n/a' 'riversideave' 'litchfieldst'
+ 'winthropstreet' 'waterstreet' 'ngtn' 'emainst' 'eastalbertstreet'
+ 'northelmst' 'kennedydrive' 'nan' 'churchst' 'newlitchfieldst'
+ 'albertstreet' 'torringfordwestst' 'eastelmst' 'churchstreet' 'taftville'
+ 'ehartford' 'northelmstreet' 'residential' 'winstedroad' 'albertst'
+ 'eastmain' 'countyrd' 'prospectst' 'eastalbertst' 'southmain' 'rock'
+ 'waterst' 'torringfordweststr' 'uncasville' 'newlitchfieldatir'
+ 'farleyplace' 'highlandavenue' 'eastalbertstatpa' 'prospectstreet'
+ 'nelmst' 'rt202' 'charlesst' 'torringfordst' 'farleypl' 'wyomingavenue'
+ 'privatelot' 'winthropstatmajor' 'wilson/taylor' 'taylorst'
+ 'northwindham' 'torringfordwestat' 'wyomingave' 'emain' 'riversideave.'
+ 'farley/mcdermott' 'eastmainst@grisw' 'hart' 'brightwoodave' 'eastalbert'
+ 'wilsonave' 'newlitchfieldstree' 'winthrop' 'lisound' 'wolcottave'
+ 'sowindsor' 'allenrd' 'egranby' 'litchfieldatjackso' 'charlesstreet'
+ 'eastmainst.' 'mainst.' 'metropolitandistric' 'n' '****unknown'
+ 'ccsu-newbritain' 'highland' 'windhamcenter' 'stateofnewyork'
+ 'countyroadatbradf' 'eastmainstreet@c' 'torringfordstreet' 'e.main'
+ 'laurelhill/rt8' '`' 'othertown' 'migeonavenue' 'norfolkrd'
+ 'eastmainst/crestwo' 'danielson' 'newlitchfield' 'eastmain/eastelm'
+ 'countyrdatbradfor' 'highstatculverts' 'countyrd/bradford' 'smainst'
+ 'msytic' 'eastalbert/park' 'newharwintonrd' 'dibblest' 'riversideavenue'
+ 'w' 'winthropst/major' 'elyme' 'elmwood' 'franklinst' 'eastmainattorring'
+ 'eastmainatgreenri' 'newharwintonroada' 'highlandave/workman'
+ 'goshenroad' 'eastmainstreetand' 'washighton' '202' 'ealbert@oak'
+ 'nmianus' 'mcdermottave' 'bristol,ct' 'ealbertst' 'eastelm'
+ 'winthrop/majorbesse' 'countyroad' 'pearlst' 'centerbrook' 'northelm'
+ 'oakave' 'farleyplatmcdermo' 'ivoryton' 'rt202atbelleview'
+ 'eastmain/torringf' 'eastmainst/torri' 'summerstreet' 'southmainstreetat'
+ 'aetnaaveatkansas']
+#####################################################################
+Speed Related             625023
+Defective Lights          208260
+Registration              207988
+Cell Phone                200607
+Moving Violation          176237
+Other                     164193
+Traffic Control Signal    162939
+Stop Sign                 150677
+STC Violation             113289
+Seatbelt                   77053
+Display of Plates          62391
+Other/Error                43661
+Window Tint                25287
+Administrative Offense     24709
+Suspended License          11519
+Unlicensed Operation        8342
+Equipment Violation         6174
+Stop Sign                     31
+Name: StatuteReason, dtype: int64
+#####################################################################
+V     2000365
+E      223501
+I       45016
+no          3
+Name: InterventionReasonCode, dtype: int64
+#####################################################################
+Top 5: WCW0264       8183
+790642042     7765
+1051          7166
+1000002598    5562
+1000002029    5430
+Name: ReportingOfficerIdentificationID, dtype: int64
+#####################################################################
+Number unique values for ReportingOfficerIdentificationID: 8593
+#####################################################################
+True     1955377
+False     313510
+Name: ResidentIndicator, dtype: int64
+#####################################################################
+False    1567003
+True      701884
+Name: TownResidentIndicator, dtype: int64
+#####################################################################
+count    2.268887e+06
+mean     3.864314e+01
+std      1.495402e+01
+min      1.000000e+00
+25%      2.600000e+01
+50%      3.600000e+01
+75%      5.000000e+01
+max      9.900000e+01
+Name: SubjectAge, dtype: float64
+#####################################################################
+N    2186969
+O      42123
+C      25307
+I      14478
+Name: SearchAuthorizationCode, dtype: int64
+#####################################################################
+M    1435490
+F     833397
+Name: SubjectSexCode, dtype: int64
+#####################################################################
+W    1856712
+B     350133
+A      44419
+I      17623
+Name: SubjectRaceCode, dtype: int64
+#####################################################################
+N    1925881
+H     297619
+M      45387
+Name: SubjectEthnicityCode, dtype: int64
+#####################################################################
